@@ -67,22 +67,11 @@ url = "https://www.instagram.com/"
 
 [deployment]
 
-
 [[deployment.targets]]
-# An arbitrary name for this target.
 name = "prod"
-
 URL = "s3://{bucket_name}?region={aws_region}"
-
-# Azure Blob Storage; see https://gocloud.dev/howto/blob/#azure
-# URL = "azblob://$web"
-
-# If you are using a CloudFront CDN, deploy will invalidate the cache as needed.
 cloudFrontDistributionID = {cloudfront_distribution_id}
 
-
-# [[deployment.matchers]] configure behavior for files that match the Pattern.
-# Samples:
 
 [[deployment.matchers]]
 #  Cache static assets for 1 year.
